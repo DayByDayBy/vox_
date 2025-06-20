@@ -2,11 +2,6 @@ import pandas as pd
 from pathlib import Path
 from typing import Union
 
-
-# self doc, really... but the basic idea is taking the TSV, grabbing the gender and
-# age range needed (lol at fourties), filtering those to remove non-native
-# speakers, and then to grab american voices - 20-59, us-eng, fem
-
 def load_and_filter_tsv(tsv_path: Union[str, Path]) -> pd.DataFrame:
     
     """

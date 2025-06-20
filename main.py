@@ -1,7 +1,7 @@
 from pathlib import Path
-from load_and_filter import load_and_filter_tsv
-from save_subset import save_subset
-from copy_audio import copy_audio_files
+from processing.load_and_filter import load_and_filter_tsv
+from processing.save_subset import save_subset
+from processing.copy_audio import copy_audio
 
 tsv_path = "../en/validated.tsv"
 
