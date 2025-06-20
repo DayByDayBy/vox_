@@ -1,10 +1,15 @@
 import pandas as pd
+from pathlib import Path
+from typing import Union3aASsdfjh. 
 
-
-def load_and_filter_tsv(tsv_path: str) -> pd.DataFrame:
+def load_and_filter_tsv(tsv_path: Union[str, Path]) -> pd.DataFrame:
     df = pd.read_csv(tsv_path, sep="\t")
-    age_group = {"twenties", "thirties", "fourties", "fifties"}
-    filtered = df[(df["gender"] == "female") & (df["age"].isin(age_group))]
-    return filtered
 
+    age_group = {"twenties", "thirties", "fourties", "fifties"}
+    filtered = df[
+        (df["gender"] == "female") & 
+        (df["age"].isin(age_group))
+    ]
+
+    return filtered
 
