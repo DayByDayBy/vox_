@@ -1,14 +1,14 @@
 from pathlib import Path
 from processing.load_and_filter import load_and_filter_tsv
 from processing.save_subset import save_subset
-from processing.copy_audio import copy_audio
+from processing.copy_files import copy_audio
 
-tsv_path = "../en/validated.tsv"
+tsv_path = "/en/us_english_female_20-59.tsv"
 
 source_audio_dir = Path("../en/clips/")
 
-subset_tsv_path = Path("../voice_subset_f_20-59.tsv")
-target_audio_dir = Path("../voice_subset_f_20-59/")
+subset_tsv_path = Path("/voice_subset_f_20-59.tsv")
+target_audio_dir = Path("/voice_subset_f_20-59/")
 
 
 # not really hooked up yet, but sth like this:

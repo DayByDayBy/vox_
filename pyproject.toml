@@ -1,13 +1,11 @@
 [project]
 name = "voice-data-processing"
 version = "0.1.0"
-description = "Add your description here"
+description = "processing the common voice set"
 requires-python = ">=3.12"
 dependencies = [
     "librosa>=0.11.0",
     "pandas>=2.3.0",
     "polars>=1.31.0",
-    "scipy>=1.15.3",
-    "soundfile>=0.13.1",
     "tqdm>=4.67.1",
 ]
