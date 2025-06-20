@@ -10,9 +10,9 @@ def copy_audio_files(df: pd.DataFrame, source_dir: Path, target_dir: Path):
         source_file = source_dir / relative_path
         target_file = target_dir / relative_path
 
-        target_file.parent.mkdir(parents=True, exist_ok=True)  # ensure subdirs exist
-
+        target_file.parent.mkdir(parents=True, exist_ok=True)
+        
         if source_file.exists():
             shutil.copy2(source_file, target_file)
         else:
-            print(f"Warning: {source_file} not found")
+            print(f"warning: {source_file} not found")
