@@ -7,7 +7,7 @@ def explore_tsv():
     print("Loading first 100 rows of TSV...")
     
     # just the first 100 rows to see structure
-    df = pd.read_csv("en/validated.tsv", sep="\t", nrows=100)
+    df = pd.read_csv("en/voice_subset_f_20-59.tsv", sep="\t")
     
     print(f"Shape: {df.shape}")
     print("\nColumn names:")

@@ -4,8 +4,17 @@ version = "0.1.0"
 description = "processing the common voice set"
 requires-python = ">=3.12"
 dependencies = [
+    "coqui-tts>=0.26.2",
+    "espnet>=202301",
     "librosa>=0.11.0",
+    "mlflow>=3.1.0",
     "pandas>=2.3.0",
+    "phonemizer>=3.3.0",
     "polars>=1.31.0",
+    "pydub>=0.25.1",
+    "torch>=2.7.1",
+    "torchaudio>=2.7.1",
     "tqdm>=4.67.1",
+    "wandb>=0.20.1",
+    "webrtcvad>=2.0.10",
 ]
