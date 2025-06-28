@@ -2,20 +2,18 @@
 
 python, uv, a dozen dependencies
 
-
-
-//
-
 coqui-tts 
 espnet
 librosa
 mlflow
 pandas
 phonemizer
-polars,
-pydub,
+polars
+pydub
 torch
 torchaudio
-tqdm,
-wandb,
+tqdm
+wandb
 webrtcvad
+
+
