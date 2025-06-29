@@ -1,6 +1,6 @@
-# messing with common voice 
+# messing with mozilla common voice 
 
-python, uv, a dozen dependencies
+python, uv, a dozen dependencies ( not all in use yet )
 
 coqui-tts 
 espnet
